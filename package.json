@@ -1,0 +1,20 @@
+{
+  "name": "js-cookbook-playground",
+  "version": "0.0.1",
+  "description": "",
+  "keywords": "",
+  "license": "",
+  "author": "Jakub Kowalski <contact@jakubkowalski.dev> https://jakubkowalski.dev",
+  "scripts": {
+    "build": "parcel build src/*",
+    "dev": "parcel src/index.html --open -p 80",
+    "start": "yarn build && yarn dev",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "parcel-bundler": "^1.12.4"
+  },
+  "dependencies": {
+    "sass": "^1.49.9"
+  }
+}
