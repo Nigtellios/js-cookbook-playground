@@ -10,6 +10,7 @@ export class InfoTile {
     this.scope = scope;
     this.className = className;
     this.settings = settings;
+    this.fragment = '';
     // this.data = data;
     this.init();
   }
