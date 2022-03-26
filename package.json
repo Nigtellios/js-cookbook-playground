@@ -17,5 +17,8 @@
   },
   "dependencies": {
     "sass": "^1.49.9"
+  },
+  "plugins": {
+    "autoprefixer": true
   }
 }

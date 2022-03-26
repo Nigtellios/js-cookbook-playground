@@ -1,22 +1,61 @@
-@mixin rem($px) {
-  $base: 16;
-  @return ($px / $base) + rem;
-}
+@use "sass:math";
+
+// Settings for mixins:
+$font-size-base: 16;
+$line-height-base: 16;
 
 @mixin flex(
   $flow: row nowrap,
-  $just: center,
-  $ac: center,
-  $ai: center
+  $justify-content: false,
+  $align-content: false,
+  $align-items: false
 ) {
   display: flex;
   flex-flow: $flow;
-  justify-content: $just;
-  align-content: $ac;
-  align-items: $ai;
+
+  @if ($justify-content) {
+    justify-content: $justify-content;
+  }
+
+  @if ($align-content) {
+    align-content: $align-content;
+  }
+
+  @if ($align-items) {
+    align-items: $align-items;
+  }
 }
 
 @mixin mw($mw) {
   max-width: $mw;
   flex: 0 0 $mw;
 }
+
+@mixin font(
+  $fontSize: $font-size-base,
+  $lineHeight: $line-height-base,
+  $fontWeight: false,
+  $letterSpacing: false,
+  $fontStyle: false,
+  $fontFamily: false
+) {
+  font-size: rem($fontSize);
+  line-height: rem($lineHeight, $fontSize);
+
+  @if $fontFamily {
+    font-family: $fontFamily;
+  }
+
+  @if $letterSpacing {
+    letter-spacing: rem($letterSpacing);
+  }
+
+  @if $fontWeight {
+    font-weight: $fontWeight;
+  }
+
+  @if $fontStyle {
+    font-style: $fontStyle;
+  }
+}
+

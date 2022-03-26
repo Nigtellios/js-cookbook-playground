@@ -1,3 +1,9 @@
 .main-header {
   width: 100%;
+  text-align: center;
+  margin-bottom: rem(50);
+
+  @include media('>=sm') {
+    margin-bottom: rem(80);
+  }
 }

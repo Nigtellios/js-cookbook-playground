@@ -1,0 +1,10 @@
+@use "sass:math";
+
+// Settings for Functions
+//
+
+@function rem($px) {
+  $base: 16;
+  $result: math.div($px, $base) + rem;
+  @return $result;
+}

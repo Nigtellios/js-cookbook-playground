@@ -1,3 +1,17 @@
 body, div, section, main, span, header, footer {
   box-sizing: border-box;
 }
+
+body {
+  font-family: $font-ibm;
+}
+
+.padding-base {
+  padding-left: rem(40);
+  padding-right: rem(40);
+
+  @include media('>=lg') {
+    padding-left: rem(120);
+    padding-right: rem(120);
+  }
+}
