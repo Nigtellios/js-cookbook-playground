@@ -2884,6 +2884,11 @@ import-fresh@^2.0.0:
     caller-path "^2.0.0"
     resolve-from "^3.0.0"
 
+include-media@^1.4.10:
+  version "1.4.10"
+  resolved "https://registry.yarnpkg.com/include-media/-/include-media-1.4.10.tgz#7a311c92c396c808504ec6a5365115d30571f259"
+  integrity sha512-TymQzKF7oWHbItEcEHOCponZ90lRr1I9QbYeD+qCxXy4Z0/pSpS4Ocz2bq3FMOERlXXrY9Sawsh9GjiObVQA6A==
+
 indexes-of@^1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/indexes-of/-/indexes-of-1.0.1.tgz#f30f716c8e2bd346c7b67d3df3915566a7c05607"
