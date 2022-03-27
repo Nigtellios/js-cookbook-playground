@@ -28,21 +28,27 @@
     text-align: center;
     z-index: 3;
     padding-top: rem(50);
-    padding-bottom: rem(50);
+    padding-bottom: rem(75);
 
     @include media('>=sm') {
       padding-top: rem(150);
-      padding-bottom: rem(150);
+      padding-bottom: rem(175);
     }
 
     @include media('>=lg') {
       padding-top: rem(200);
-      padding-bottom: rem(200);
+      padding-bottom: rem(225);
+    }
+
+    @include media('>=xxl') {
+      padding-top: rem(300);
+      padding-bottom: rem(325);
     }
 
     h2 {
       color: $pure-white;
-      font-weight: 500;
+      font-weight: 600;
+      letter-spacing: rem(8);
     }
   }
 
