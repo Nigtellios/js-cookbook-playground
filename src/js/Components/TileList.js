@@ -1,5 +1,6 @@
-export class TileList {
+import { InfoTile } from "./InfoTile";
 
+class TileList {
   /**
    * Class Constructor
    * @param tile
@@ -8,3 +9,5 @@ export class TileList {
     this.tile = tile;
   }
 }
+
+export { TileList };
