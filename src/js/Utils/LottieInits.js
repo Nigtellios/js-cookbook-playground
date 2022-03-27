@@ -1,10 +1,10 @@
 import bodymovin from 'lottie-web';
 
 const lottie = {
-  init(el, path) {
+  init(el, data) {
     return bodymovin.loadAnimation({
-      container: document.getElementsByClassName(`.${el}`),
-      path: path,
+      container: document.getElementById(`${el}`),
+      animationData: data,
       renderer: 'svg',
       loop: true,
       autoplay: true
