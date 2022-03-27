@@ -5,7 +5,9 @@
   z-index: 1;
   width: 100%;
 
-  &__copyright {
+  &__content {
+    @include flex(column nowrap, center, center, center);
+
     background: $pure-white;
     box-shadow: $shadow-default;
     border-top-left-radius: rem(10);
@@ -16,18 +18,6 @@
 
     @include media('>=sm') {
       width: auto;
-    }
-  }
-
-  &__content {
-    padding: rem(15);
-
-    @include media('>=sm') {
-      padding: rem(20);
-    }
-
-    a {
-      text-decoration: none;
     }
   }
 }

@@ -15,6 +15,9 @@ export class InfoTile {
     this.init();
   }
 
+  /**
+   * Init Function - run every necessary method
+   */
   init() {
     this.createFragment(this.className, this.settings);
     this.createRange(this.scope, this.fragment);

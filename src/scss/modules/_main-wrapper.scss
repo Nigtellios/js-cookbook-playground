@@ -1,0 +1,44 @@
+.main-wrapper {
+  background: $pure-white;
+  margin-left: rem(40);
+  margin-right: rem(40);
+  position: relative;
+  margin-top: rem(-50);
+
+  border-top-left-radius: rem(20);
+  border-top-right-radius: rem(20);
+  
+  @include media('>=sm') {
+    margin-left: rem(80);
+    margin-right: rem(80);
+  }
+  
+  @include media('>=lg') {
+    margin-left: rem(200);
+    margin-right: rem(200);
+    margin-top: rem(-80);
+  }
+
+  &:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: $pure-white;
+    box-shadow: $shadow-wrapper;
+    border-top-left-radius: rem(20);
+    border-top-right-radius: rem(20);
+    width: 100%;
+    height: rem(200);
+    z-index: -1;
+  }
+
+  &__content {
+    padding: rem(40);
+
+    @include media('>=sm') {
+      padding: rem(80);
+    }
+  }
+}
