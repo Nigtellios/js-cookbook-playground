@@ -1,7 +1,9 @@
 .main-header {
   @include flex(row nowrap, center);
+  z-index: 1;
 
   &__navigation {
+    background: $pure-white;
     box-shadow: $shadow-default;
     border-bottom-left-radius: rem(10);
     border-bottom-right-radius: rem(10);

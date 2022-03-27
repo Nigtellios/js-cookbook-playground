@@ -1,0 +1,49 @@
+.home-banner {
+  background: $black;
+  width: 100%;
+  min-height: rem(200);
+  position: relative;
+  overflow: hidden;
+  margin-top: rem(-125);
+  z-index: -1;
+
+  @include media('>=sm') {
+    min-height: rem(350);
+    margin-top: rem(-155);
+  }
+
+  &__content {
+
+  }
+
+  &__background {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    &--planet, &--sparkles {
+      position: absolute;
+    }
+
+    &--planet {
+      top: 0;
+      bottom: 0;
+      left: 0;
+      margin: rem(50);
+    }
+
+    &--sparkles {
+      top: 0;
+      bottom: 0;
+      right: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transform: scale(2) rotate(90deg);
+    }
+  }
+}
