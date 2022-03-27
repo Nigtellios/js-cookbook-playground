@@ -1,3 +1,27 @@
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@100;200;300;400;500;600;700&display=swap');
 
 $font-ibm: 'IBM Plex Sans Arabic', sans-serif;
+
+h1 {
+  font-size: rem(48);
+}
+
+h2 {
+  font-size: rem(38);
+}
+
+h3 {
+  font-size: rem(32);
+}
+
+h4 {
+  font-size: rem(28);
+}
+
+h5 {
+  font-size: rem(22);
+}
+
+h6{
+  font-size: rem(18);
+}

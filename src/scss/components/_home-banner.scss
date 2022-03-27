@@ -1,19 +1,29 @@
 .home-banner {
   background: $black;
   width: 100%;
-  min-height: rem(200);
+  height: 100%;
   position: relative;
   overflow: hidden;
-  margin-top: rem(-125);
   z-index: -1;
 
-  @include media('>=sm') {
-    min-height: rem(350);
-    margin-top: rem(-155);
-  }
-
   &__content {
+    height: 100%;
+    width: 100%;
+    @include flex(column nowrap, center, center, center);
+    text-align: center;
+    z-index: 3;
+    padding-top: rem(50);
+    padding-bottom: rem(50);
 
+    @include media('>=sm') {
+      padding-top: rem(150);
+      padding-bottom: rem(150);
+    }
+
+    h2 {
+      color: $pure-white;
+      font-weight: 500;
+    }
   }
 
   &__background {
@@ -24,6 +34,7 @@
     right: 0;
     bottom: 0;
     left: 0;
+    z-index: -1;
 
     &--planet, &--sparkles {
       position: absolute;
