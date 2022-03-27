@@ -1,0 +1,33 @@
+.main-footer {
+  @include flex(row nowrap, center);
+  position: fixed;
+  bottom: 0;
+  z-index: 1;
+  width: 100%;
+
+  &__copyright {
+    background: $pure-white;
+    box-shadow: $shadow-default;
+    border-top-left-radius: rem(10);
+    border-top-right-radius: rem(10);
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+
+    @include media('>=sm') {
+      width: auto;
+    }
+  }
+
+  &__content {
+    padding: rem(15);
+
+    @include media('>=sm') {
+      padding: rem(20);
+    }
+
+    a {
+      text-decoration: none;
+    }
+  }
+}
