@@ -13,9 +13,8 @@
   },
   "devDependencies": {
     "include-media": "^1.4.10",
-    "parcel-bundler": "^1.12.4"
-  },
-  "dependencies": {
+    "lottie-web": "^5.9.1",
+    "parcel-bundler": "^1.12.4",
     "sass": "^1.49.9"
   },
   "plugins": {
