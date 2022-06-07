@@ -66,6 +66,7 @@
     display: block;
     position: relative;
     padding: rem(15);
+    transition: 0.3s cubic-bezier(0,1.3,1,1);
 
     @include media('>=sm') {
       padding: rem(20);
@@ -99,16 +100,16 @@
       z-index: -1;
       background: $amour;
       opacity: 0;
+  
+      transition: 0.3s cubic-bezier(1,1,1.3,0);
     }
 
     &:hover {
-      transition: 0.3s cubic-bezier(0,1.3,1,1);
       transform: translateY(20%);
     }
 
     &:hover:after {
       opacity: 1;
-      transition: 0.3s cubic-bezier(1,1,1.3,0);
     }
 
     &:hover svg {
